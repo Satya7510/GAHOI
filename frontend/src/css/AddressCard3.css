@@ -1,0 +1,43 @@
+.address-card-container {
+    padding: 20px;
+  }
+  
+  .address-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+    gap: 10px;
+  }
+  
+  .address-card {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .address-card p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .address-card-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .address-card-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .address-card-grid {
+      grid-template-columns: 1fr; /* 1 column on mobile screens */
+    }
+  }
+  

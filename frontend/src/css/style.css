@@ -1,0 +1,212 @@
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: 5px solid #990099;
+}
+
+/* .ag-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; 
+  overflow-x: auto; 
+} */
+/* .custom-ag-grid {
+  flex-grow: 1; 
+  overflow: hidden; 
+} */
+
+
+.selected-cell {
+  background-color: #cce5ff; /* Light blue for selected cells */
+}
+
+.placeholder-cell {
+  background-color: #ffffe0; /* Light yellow background for placeholder cells */
+  font-style: italic;
+}
+
+.pinned-row {
+  background-color: #f2f2f2; /* Light gray background for pinned rows */
+  font-weight: bold;
+}
+
+.normal-row {
+  background-color: #ffffff; /* White background for normal rows */
+}
+
+
+.placeholder-cell {
+  color: gray;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.selected-column-header {
+  background-color: #d3d3d3; /* Highlight color for selected header */
+  color: #333; /* Text color */
+}
+
+.selected-cell {
+  background-color: #fef4ff !important;
+  color: black; /* Optional: to ensure text is visible on a blue background */
+}
+
+.highlight-cell {
+  background-color: yellow; /* Change to the desired highlight color */
+}
+
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5em 1em;
+}
+
+.card-item {
+    display: contents;
+}
+
+.card-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.card-value {
+    color: #000;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button {
+    background-color: #990099;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #990099;
+}
+
+
+
+/* .ag-cell {
+    padding: 8px 
+    font-size: 20px; 
+} */
+
+
+.ag-cell {
+    white-space: normal !important; 
+    overflow-wrap: break-word !important; 
+    line-height: 1.5 !important;
+}
+
+/* Base style for grid wrapper */
+/* .ag-grid-wrapper {
+    width: 100%;
+    height: 600px;
+  } */
+  
+  /* Custom button styling */
+  .custom-button {
+    background-color: #990099;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  
+  .ag-icon{
+    color: white;
+  }
+ 
+  .ag-theme-quartz .ag-header {
+    background-color: rgba(144, 23, 144, 0.802) !important; 
+    color: white !important;            
+    font-weight: bold;                   
+    font-size: 20px ;         
+    text-emphasis-color: white;
+  }
+  
+  .ag-theme-quartz .ag-header-cell {
+    border-bottom: 0.5px solid black !important; 
+  }
+  
+  .ag-theme-quartz .ag-cell {
+    border: 0.5px solid rgb(194, 194, 194); 
+    font-size: 20px ;  
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+    border-bottom: grey;
+  }
+  
+  /* .ag-theme-quartz .ag-header-row {
+    border-bottom: 0.5px solid black !important; 
+  } */
+  
+ 
+  .ag-header-cell-text {
+    color: white;
+}
+
+
+  
+  
+  
+  @media only screen and (max-width: 760px) {
+    .ag-grid-wrapper {
+      height: 600px; 
+    }
+  }
+  
+  
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .ag-grid-wrapper {
+      height: 500px; 
+    }
+  }
+  
+  .ag-paging-panel {
+    border-top: 1px solid;
+    border-top-color: var(--ag-border-color);
+    color: var(--ag-secondary-foreground-color);
+    height: var(--ag-header-height);
+    background-color: #E0B0FF;
+}
+  
+  @media only screen and (min-width: 1025px) {
+    .ag-grid-wrapper {
+      height: 900px;
+    }
+  } 
